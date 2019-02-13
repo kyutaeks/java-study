@@ -4,7 +4,7 @@ public class StringType {
 	public static void main(String[] args) {
 		String str = "123";
 		System.out.println(str + 123);
-		// ¹®ÀÚ + ¹®ÀÚ = ¹®ÀÚ , ¼ıÀÚ + ¹®ÀÚ = ¹®ÀÚ
+		// ë¬¸ì + ë¬¸ì = ë¬¸ì , ìˆ«ì + ë¬¸ì = ë¬¸ì
 		String str2 = new String("123");
 		System.out.println(str.contentEquals(str2));
 	}
