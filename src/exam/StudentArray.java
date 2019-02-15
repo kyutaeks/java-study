@@ -13,6 +13,7 @@ public class StudentArray {
 			students[i] = new Student();
 			students[i].grade = i+1;
 			}
+		System.out.println(students[8].grade);
 		System.out.println(students[9].grade);
 	}
 
