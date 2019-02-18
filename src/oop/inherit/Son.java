@@ -18,7 +18,7 @@ class Father extends GrandFather {
 }
 
 public class Son extends Father {
-	Son() {
+	public Son() {
 
 	}
 
