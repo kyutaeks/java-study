@@ -1,3 +1,4 @@
+package homework;
 
 public class Overloading {
 	public static int plus(int x, int y) {
@@ -5,8 +6,8 @@ public class Overloading {
 		return 0;
 	}
 
-	public static int plus(int x, int y, int z) {
-		System.out.println(x+y+z);
+	public static int plus(int x, int y, int z, int q) {
+		System.out.println(x+y+z+q);
 		return 0;
 	}
 
@@ -17,7 +18,7 @@ public class Overloading {
 
 	public static void main(String[] args) {
 		plus(1,2);
-		plus(4,1,5);
-		plus("안녕","하세요");
+		plus(4,1,5,6);
+		plus("12","34");
 	}
 }

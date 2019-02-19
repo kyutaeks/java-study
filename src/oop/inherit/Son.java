@@ -1,15 +1,11 @@
 package oop.inherit;
 
 //다시 이해할것
-class GrandFather {
-	void work() {
-		System.out.println("할아버지가 농사를 짓습니다.");
-	}
-}
 
-class Father extends GrandFather {
+
+class Father  {
 	Father() {
-
+		
 	}
 
 	void work() {
@@ -19,10 +15,11 @@ class Father extends GrandFather {
 
 public class Son extends Father {
 	public Son() {
-
+		
 	}
 
 	void work() {
+		
 		System.out.println("아들이 공부함.");
 
 	}
