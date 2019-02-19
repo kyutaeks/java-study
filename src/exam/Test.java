@@ -51,5 +51,6 @@ public class Test {
 		System.out.println("이 음식의 유통기한은 " + food[2].year + "년 이고, 이름은 " + food[2].name + " 입니다.");
 		System.out.println(food[1].name);
 		System.out.println(dogs[1].age);
+		//반갑습니다.
 	}
 }
