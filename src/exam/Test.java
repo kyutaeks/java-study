@@ -52,5 +52,6 @@ public class Test {
 		System.out.println(food[1].name);
 		System.out.println(dogs[1].age);
 		//반갑습니다.
+		//dkkfkf
 	}
 }
