@@ -4,17 +4,22 @@ public class Cat {
 	public String name;
 	public int age;
 
+	public String toString() {
+		return "이 고양이의 이름은  " +name + " 이구요,나이는 " + age + "입니다.";
+	}
+//	여기서 toString에 오버라이딩 되기 때문에 메모리 값이 아니라 내가 가지고있는 리턴값이 나오게된다.
 	public static void main(String[] args) {
 		Cat[] cat = new Cat[3];
 		for(int i=0; i<cat.length ;i++) {
 			cat[i] = new Cat();
-			cat[i].name = "이름" + i;
+			cat[i].name = "고양이" + i;
 			cat[i].age = i;	
 					
 		}
 		for(int i=0; i<cat.length ;i++) {
 			System.out.println(i+"번째 고양이 이름 : "+ cat[i].name);
 			System.out.println(i+"번째 고양이 나이 : "+ cat[i].age);
+			System.out.println(cat[i]);
 		}
 //		밑에 코딩은 위랑 결과는 같지만 하드코딩
 		
