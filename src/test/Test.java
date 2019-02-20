@@ -21,7 +21,8 @@ System.out.println("나는 두번째야.");
 
 	public static void main(String[] args) {
 		Test t = new Test();
-
+//다시한번 커밋하겠습니다.
+		//컴퓨터 커밋테스트 하겠습니다.
 	}
 
 }
