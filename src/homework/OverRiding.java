@@ -37,7 +37,5 @@ public class OverRiding extends Father {
 		ov.work();
 
 	}
-//	void의 역할은 return 되는 타입이 없음을 의미합니다. 즉 아무것도 리턴하지 않음을 선언해주는 것과 같습니다. 
-//	예를들어 아래 코드는 리턴에 대하여 void를 선언하였으므로 아무것도 리턴하지 않아야 에러가 발생하지 않습니다.
 
 }
