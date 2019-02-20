@@ -2,7 +2,6 @@ package exam.ex02;
 
 public class IntArray {
 	public int[] nums = new int[10];
-
 	public boolean compare(int num) {
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == 0)
@@ -16,6 +15,7 @@ public class IntArray {
 
 	public static void main(String[] args) {
 		IntArray ia = new IntArray();
+//		ia.nums[0]=2;
 		for (int i = 0; i < ia.nums.length; i++) {
 //			ia.nums[i] = (int) (Math.random() * 10) + 1;
 			int num =(int)(Math.random() * 10) + 1;
