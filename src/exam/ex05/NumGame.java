@@ -9,7 +9,7 @@ public class NumGame {
 		ArrayList<Integer> numsList = new ArrayList<>();
 		for (int i = 0; i < 3; i++) {
 			int num = (int)(Math.random() * 100) + 1;
-			numsList.add(num);
+			numsList.add(num); 
 		}
 		return numsList;
 	}
