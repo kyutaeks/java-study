@@ -17,6 +17,7 @@ public class SearchList2 {
 		String strNum = scan.nextLine();
 		String[] strNums = strNum.split(",");
 		ArrayList<Integer> anList = new ArrayList<>();
+//		<> 안에는 어떤 데이터타입이던지 들어갈수있다.
 		
 		for(int i = 0 ; i<strNums.length;i++) {
 			int num = Integer.parseInt(strNums[i]);
