@@ -7,7 +7,7 @@ public class BassBall1 {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> numList = new ArrayList<>();
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 4; i++) {
 			int ranNum = (int) (Math.random() * 9) + 1;
 			if (numList.indexOf(ranNum) == -1) {
 				numList.add(ranNum);
@@ -22,7 +22,7 @@ public class BassBall1 {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("번호 입력 : ");
 		String [] numStr = scan.nextLine().split(",");
-		int[]nums = new int[3];
+		int[]nums = new int[4];
 		for (int i = 0; i < nums.length; i++) {
 			nums[i] = Integer.parseInt(numStr[i]);
 		}
