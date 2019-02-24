@@ -4,6 +4,7 @@ public class Condition2 {
 
 	public static void main(String[] args) {
 		int a = 4;
+		int b = 4;
 //		String str = "a는 3이 아니다."; // else 문을 생략할 수 있는 방법 선행 전제.
 //		if (a == 3) {
 //			str = "a는 3이다.";
@@ -11,7 +12,10 @@ public class Condition2 {
 		String str = (a == 3) ? "a는 3이다." : "a는 3이 아니다.";
 		// 맞으면 앞, 틀리면 뒤
 
+		String ays = (b == 9) ? "b는 4이다." : "b는 4가 아니다.";
+	
 		System.out.println(str);
+		System.out.println(ays);
 		
 		String s1 = "Dog";
 		System.out.println(s1.equals("dog")); // false 호출됨 대소문자의 구분

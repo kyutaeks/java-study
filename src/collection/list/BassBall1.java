@@ -19,6 +19,8 @@ public class BassBall1 {
 
 		System.out.println("numList : " + numList);
 //		int[] nums = new int[] { 1, 2, 3 };
+		int bCnt = 0;
+		int sCnt = 0;
 		Scanner scan = new Scanner(System.in);
 		System.out.print("번호 입력 : ");
 		String [] numStr = scan.nextLine().split(",");
@@ -26,34 +28,35 @@ public class BassBall1 {
 		for (int i = 0; i < nums.length; i++) {
 			nums[i] = Integer.parseInt(numStr[i]);
 		}
-		
-//		int bCnt = 0;
-//		int sCnt = 0;
-//		for (int i = 0; i < nums.length; i++) {
-//			if (numList.indexOf(nums[i]) != -1) {
-//				if (i==numList.indexOf(nums[i])) {
-//					sCnt ++;
-//				}else {
-//					bCnt++;
-//				}
-//			} 
-//			}
-//		if(sCnt + bCnt ==0) {
-//			System.out.println("아웃!");
-//		}else {
-//			System.out.println(sCnt + "S, " + bCnt + "B");
-//		}
+		while(sCnt!=3) {
 		for (int i = 0; i < nums.length; i++) {
 			if (numList.indexOf(nums[i]) != -1) {
 				if (i==numList.indexOf(nums[i])) {
-					System.out.println("1S");
+					sCnt ++;
 				}else {
-					System.out.println("1B");
+					bCnt++;
 				}
-			} else {
-				System.out.println("out");
+			} 
 			}
+		if(sCnt + bCnt ==0) {
+			System.out.println("아웃!");
+		}else {
+			System.out.println(sCnt + "S, " + bCnt + "B");
 		}
+		}
+			System.out.println("gameover : "+ numList);
+	
+//		for (int i = 0; i < nums.length; i++) {
+//			if (numList.indexOf(nums[i]) != -1) {
+//				if (i==numList.indexOf(nums[i])) {
+//					System.out.println("1S");
+//				}else {
+//					System.out.println("1B");
+//				}
+//			} else {
+//				System.out.println("out");
+//			}
+//		}
 
 	}
 }

@@ -4,7 +4,7 @@ public class Condition3 {
 
 	public static void main(String[] args) {
 		int num = 5;
-		String str = "3";
+		String str = "5";
 		
 		switch(str) { // 스위치는 true 일때 부터 이후까지 지속적으로 실행한다.
 		// 대안으로 break 를 사용한다.

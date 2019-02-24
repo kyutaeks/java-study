@@ -6,7 +6,7 @@ public class Condition {
 		int num2 = 2;
 		
 		boolean isEqual = num1==num2;
-		if(!isEqual) {
+		if(isEqual) {
 			System.out.println("num1과 num2는 같습니다.");
 		}else {
 			System.out.println("num1과 num2는 다릅니다.");
