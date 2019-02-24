@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Rotto {
 	public static void main(String[] args) {
-		for (int x = 0; x < 5; x++) {
+//		for (int x = 0; x < 5; x++) {
 			ArrayList<Integer> rotto6 = new ArrayList<>();
 			for (int i = 0; i < 6; i++) {
 				int a = (int) (Math.random() * 45) + 1;
@@ -37,4 +37,4 @@ public class Rotto {
 
 	}
 
-}
+//}
