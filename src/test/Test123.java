@@ -28,26 +28,28 @@ public class Test123 {
 		do {
 		int[] test3 = new int[3];
 		for (int i = 0; i <3; i++) {
-			test3[i] = (int) (Math.random() * 5) + 1;
+			test3[i] = (int) (Math.random() * 10) + 1;
 
 		}
 		System.out.print(test3[0] + ",");
 		System.out.print(test3[1] + ",");
-		System.out.print(test3[2] + ",");
+		System.out.print(test3[2]);
 		test = test3;
-		System.out.println(test.equals(test3));
+//		System.out.println();
+//		System.out.println(test.equals(test3));
 		int[] test4 = new int[3];
 		for (int i = 0; i < 3; i++) {
-			test4[i] = (int) (Math.random() * 5) + 1;
+			test4[i] = (int) (Math.random() * 10) + 1;
 
 		}
 		System.out.print(test4[0] + ",");
 		System.out.print(test4[1] + ",");
-		System.out.print(test4[2] + ",");
+		System.out.print(test4[2]);
 
 		test2 = test4;
-		System.out.println(Arrays.equals(test2, test4));
-		System.out.println();
+//		System.out.println();
+//		System.out.println(Arrays.equals(test2, test4));
+//		System.out.println();
 			
 		}while(!isEquals(test,test2));
 		
