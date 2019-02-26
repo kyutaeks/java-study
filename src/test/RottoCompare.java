@@ -45,7 +45,7 @@ public class RottoCompare {
 				compare2 = num2;
 			}
 //		System.out.println(compare2);
-		} while (!isEquals(compare,compare2));
+		} while ((compare==compare2));
 		System.out.println(compare);
 		System.out.println(compare2);
 		System.out.println(compare.equals(compare2));
