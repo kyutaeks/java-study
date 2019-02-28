@@ -50,10 +50,11 @@ public class BoardService {
 			ps.setString(3, num);
 			int cnt = ps.executeUpdate();
 			if(cnt==1) {
-				System.out.println("게시물이 수정 되었습니다.");
+				System.out.println("정상적으로 "+ num + "수정 되었습니다.");
+			}else {
+				System.out.println("선택하신 게시물이 없습니다.");
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -66,6 +67,8 @@ public class BoardService {
 			int cnt = ps.executeUpdate();
 			if(cnt==1) {
 				System.out.println("게시물이 삭제되었습니다.");
+			}else {
+				System.out.println("선택하신 게시물이 없습니다.");
 			}
 		} catch (SQLException e) {
 			
