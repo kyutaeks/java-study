@@ -35,27 +35,28 @@ public class View {
 						cmd = scan.nextLine();
 						if ("3".equals(cmd)) {
 							bs.selectBoard();
-						}else if("1".equals(cmd)){
-							System.out.print("제목 : ");
-							String title = scan.nextLine();
-							System.out.print("내용 : ");
-							String content = scan.nextLine();
-							bs.insertBoard(title,content);
-							
-						}else if("2".equals(cmd)) {
-							System.out.print("지울 번호를 입력해주세요  : ");
-							String num = scan.nextLine();
-							bs.deleteBoard(num);
-						}else if("4".equals(cmd)) {
-							System.out.print("수정할 번호를 입력해주세요 : ");
-							String num = scan.nextLine();
-							System.out.print("수정할 제목 : ");
-							String title = scan.nextLine();
-							System.out.print("수정할 내용 : ");
-							String content = scan.nextLine();
-							bs.updateBoard(num, title, content);
-							
 						}
+//							else if("1".equals(cmd)){
+//							System.out.print("제목 : ");
+//							String title = scan.nextLine();
+//							System.out.print("내용 : ");
+//							String content = scan.nextLine();
+//							bs.insertBoard(title,content);
+//							
+//						}else if("2".equals(cmd)) {
+//							System.out.print("지울 번호를 입력해주세요  : ");
+//							String num = scan.nextLine();
+//							bs.deleteBoard(num);
+//						}else if("4".equals(cmd)) {
+//							System.out.print("수정할 번호를 입력해주세요 : ");
+//							String num = scan.nextLine();
+//							System.out.print("수정할 제목 : ");
+//							String title = scan.nextLine();
+//							System.out.print("수정할 내용 : ");
+//							String content = scan.nextLine();
+//							bs.updateBoard(num, title, content);
+//							
+//						}
 					} while (!"q".equals(cmd));
 
 				} else {

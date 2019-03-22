@@ -3,17 +3,19 @@ package db.board;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BoardService {
 
 	public void selectBoard() {
-		String sql = "select * from board_info";
+		String sql = "select * from user_info";
 		try {
 			PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
-			System.out.println("제목");
+//			System.out.println("제목");
 			while (rs.next()) {
-				System.out.println(rs.getString("bi_title"));
+				System.out.println(rs.getString("ui_num") + rs.getString("ui_name") + rs.getString("ui_age"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -40,7 +42,7 @@ public class BoardService {
 			DBCon.close();
 		}
 	}
-
+//
 	public void updateBoard(String num, String title, String content) {
 		String sql = "update board_info set bi_title = ? , bi_content = ? where bi_num=?";
 		try {
@@ -58,7 +60,7 @@ public class BoardService {
 			e.printStackTrace();
 		}
 	}
-
+//
 	public void deleteBoard(String num) {
 		String sql = "delete from board_info where bi_num=?";
 		try {
@@ -76,4 +78,5 @@ public class BoardService {
 		}
 		
 	}
+
 }

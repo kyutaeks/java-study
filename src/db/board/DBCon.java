@@ -10,10 +10,7 @@ public class DBCon {
 	private static final String PASSWORD = "12345678";
 	private static Connection con;
 //			final 변수가 대문자.
-	DBCon() {
-
-	}
-
+	
 	public static Connection getCon() {
 		if (con == null) {
 			try {
